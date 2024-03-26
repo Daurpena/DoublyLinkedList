@@ -16,7 +16,8 @@ namespace UnitTest
           
           //Expected output 10 -> 50 -> 100 -> NULL
           linked.PrintList();
-
+          
+          //Ensure list traversal operates in both directions
           assert(linked.Head->Data == 10);
           assert(linked.Head->Next->Data == 50);
           assert(linked.Head->Next->Next->Data == 100);
