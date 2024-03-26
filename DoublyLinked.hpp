@@ -12,7 +12,7 @@ class DoublyLinked
           DoublyLinked(); 
           Node<T>* Head; 
           Node<T>* Tail; 
-          Node<T>* get(int index); 
+
      //Insert ---------------------------
           void InsertHead(T val);
           void InsertTail(T val);
@@ -31,20 +31,6 @@ class DoublyLinked
 // METHOD DEFINITIONS  ---------------------------------------------
 template<typename T> 
 DoublyLinked<T>::DoublyLinked() : node_count(0), Head(NULL), Tail(NULL) {}
-
-template<typename T> 
-Node<T>* DoublyLinked<T>::get(int index)
-{
-     if(index < 0 || index > node_count)     //if index is out of range, node is empty -- return
-          { std::cout << "[GET ERROR]: Index out of bounds.  \n "; return NULL; }
-
-     Node<T> * node = Head;                 //start node at Head
-
-     for(int i=0; i < index; i++)            //set node to desired index
-          { node = node->Next; }
-
-     return node;                            //once index is reached, return node
-}
 
 // INSERT HEAD  ---------------------------------------------
 template<typename T> 
