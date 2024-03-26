@@ -3,6 +3,9 @@
 #include <iostream> 
 #include "Node_D.hpp"
 
+/* The class is a created as a template to allow flexibility in type selection.
+     As such, template functions must be definied within the header file. 
+*/
 template<typename T> 
 class DoublyLinked
 {
