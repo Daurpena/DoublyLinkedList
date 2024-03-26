@@ -28,7 +28,7 @@ class DoublyLinked
           void PrintList(); 
 };   
 
-// FUNCTION DEFINITIONS  ---------------------------------------------
+// METHOD DEFINITIONS  ---------------------------------------------
 template<typename T> 
 DoublyLinked<T>::DoublyLinked() : node_count(0), Head(NULL), Tail(NULL) {}
 
